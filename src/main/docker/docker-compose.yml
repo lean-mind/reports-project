@@ -1,0 +1,17 @@
+version: '2'
+services:
+  reports_db:
+    build: postgres/
+    container_name: reports_postgres
+    ports:
+      - "5432:5432"
+    restart: always
+
+  reports_rabbitmq:
+    image: rabbitmq
+    hostname: "my-rabbit"
+    container_name: reports_rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    restart: always

@@ -1,0 +1,118 @@
+// Credits and thanks to Geoff Yuen for making this!
+// http://codepen.io/geoffyuen/pen/FCBEg
+
+$breakpoint-alpha: 768px;
+
+.responsive-table {
+	margin: 1em 0;
+	min-width: 300px;
+	width: 100%;
+	border: 1px solid rgb(217, 217, 217);
+
+	tr {
+
+		@media (min-width: $breakpoint-alpha) {
+			&:nth-child(even) {
+				background-color: rgba(0, 188, 212, 0.1);
+			}
+		}
+
+		@media (max-width: $breakpoint-alpha - 1) {
+			&:nth-child(odd) {
+				background-color: rgba(0, 188, 212, 0.1);
+			}
+		}
+
+		&:last-child {
+			background-color: rgba(0, 188, 212, 0.35);
+			font-weight: bold;
+			color: rgb(40, 40, 40);
+		}
+	}
+
+	th {
+		display: none;
+	}
+
+	td {
+		display: block;
+
+		&:first-child {
+			padding-top: .5em;
+		}
+
+		&:last-child {
+			padding-bottom: .5em;
+		}
+
+		&:before {
+			content: attr(data-th)"  ";
+			font-weight: bold;
+			width: 160px;
+			display: inline-block; // end options
+
+			@media (min-width: $breakpoint-alpha) {
+				display: none;
+			}
+		}
+	}
+
+	th, td {
+		text-align: left;
+
+		@media (min-width: $breakpoint-alpha) {
+			display: table-cell;
+			padding: .25em .5em;
+			text-align: center;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.mobile-header {
+		
+		th {
+			display: block;
+			margin: 0;
+			margin-top: 5px;
+			text-align: center;
+			padding: 16px 0;
+			font-size: 1.1em;
+
+			@media (min-width: $breakpoint-alpha) {
+				display: none;
+			}
+		}
+	}
+}
+
+.responsive-table {
+	color: rgb(40, 40, 40);
+	overflow: hidden;
+
+	tr {
+		transition: background-color 0.1s ease-in-out;
+	}
+
+	tr:hover {
+		background-color: rgba(0, 188, 212, 0.35);
+	}
+
+	th, td {
+		margin: .5em 1em;
+		@media (min-width: $breakpoint-alpha) {
+			padding: 1em !important;
+		}
+	}
+
+	th, td :before {
+		color: rgb(255, 255, 255);
+		background-color: rgb(0, 188, 212);
+	}
+}

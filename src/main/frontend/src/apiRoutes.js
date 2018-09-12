@@ -1,0 +1,10 @@
+export const BASE_URL = '/api';
+export const SOME_GET = `${BASE_URL}/example`;
+export const SOME_PUT = `${BASE_URL}/example`;
+export const REPORTS_TOTALS = `${BASE_URL}/reports/json/totals`;
+export const REPORTS_HOURLY = `${BASE_URL}/reports/json/hourly`;
+export const REPORTS_GROUPED_HOURS = `${BASE_URL}/reports/json/grouped-hours`;
+export const REPORTS_HISTORY = `${BASE_URL}/reports/json/history`;
+export const REPORTS_TOTALS_SPREADSHEET = `${BASE_URL}/reports/spreadsheet/totals`;
+export const REPORTS_TOTALS_PDF = `${BASE_URL}/reports/pdf/totals`;
+export const ESTABLISHMENTS = `${BASE_URL}/establishments`;

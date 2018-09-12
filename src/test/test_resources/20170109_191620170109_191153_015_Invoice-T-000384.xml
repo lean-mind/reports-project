@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Export>
+    <Invoices>
+        <Invoice Serie="T" Number="384" BusinessDay="2016-10-02" VatIncluded="true" PrintCount="1" Date="2016-10-02T21:41:30">
+            <Pos Id="1" Name="TPV" />
+            <User Id="2" Name="Camarero" />
+            <InvoiceItems>
+                <Item ContentType="T" BusinessDay="2016-10-02" VatIncluded="true" Guests="" Date="2016-10-02T21:41:30">
+                    <Pos Id="1" Name="TPV" />
+                    <User Id="2" Name="Camarero" />
+                    <SaleCenter Id="1" Name="Barra" Location="B1" />
+                    <Lines>
+                        <Line Index="0" Type="Standard" ParentIndex="" MenuGroup="" ProductId="133" UserId="2" ProductName="TABLETA Barman1" SaleFormatId="133" SaleFormatName="TABLETA Barman1" SaleFormatRatio="1.000" PreparationTypeId="" PreparationTypeName="" PreparationOrderId="" PreparationOrderName="" MainBarcode="" ProductPrice="5.50" Quantity="1.000" ProductCostPrice="0.00" UnitCostPrice="0.00" TotalCostPrice="0.00" VatId="3" VatRate="0.1000" SurchargeRate="0.0140" UnitPrice="5.50" DiscountRate="0.0000" CashDiscount="0.0000" OfferId="" OfferCode="" TotalAmount="5.50" />
+                    </Lines>
+                    <Discounts DiscountRate="0.0000" CashDiscount="0.00" />
+                    <Payments />
+                    <Totals GrossAmount="5.50" NetAmount="5.00" VatAmount="0.50" SurchargeAmount="0.00">
+                        <Taxes>
+                            <Tax VatRate="0.1000" SurchargeRate="0.0140" GrossAmount="5.50" NetAmount="5.00" VatAmount="0.50" SurchargeAmount="0.00" />
+                        </Taxes>
+                    </Totals>
+                </Item>
+            </InvoiceItems>
+            <Payments>
+                <Payment MethodId="1" MethodName="Efectivo" Amount="5.50" PaidAmount="10.00" ChangeAmount="4.50" TipAmount="0.00" Date="2016-10-02T21:41:30" PosId="1" IsPrepayment="false">
+                    <ExtraInformation><![CDATA[]]></ExtraInformation>
+                </Payment>
+            </Payments>
+            <Totals GrossAmount="5.50" NetAmount="5.00" VatAmount="0.50" SurchargeAmount="0.00">
+                <Taxes>
+                    <Tax VatRate="0.1000" SurchargeRate="0.0140" GrossAmount="5.50" NetAmount="5.00" VatAmount="0.50" SurchargeAmount="0.00" />
+                </Taxes>
+            </Totals>
+        </Invoice>
+    </Invoices>
+</Export>
